@@ -4,12 +4,15 @@ import styles from "./PostList.module.css";
 import NewPosts from "../NewPosts/NewPosts";
 import Modal from "../Modal/Modal";
 
-function PostList() {
+function PostList({ isModalVisible, hidemodalHanlder }) {
   return (
     <div>
-      <Modal>
-        <NewPosts />
-      </Modal>
+      {isModalVisible && (
+        <Modal onClose={hidemodalHanlder}>
+          <NewPosts />
+        </Modal>
+      )}
+
       <div className={styles.postlist}>
         <Posts />
         <Posts />

@@ -5,11 +5,22 @@ import Header from "./Components/Header/Header.jsx";
 import styles from "./App.module.css";
 
 function App() {
-  const [modalEnabled, setModalEnabled] = useState(false);
+  const [modalEnabled, setModalEnabled] = useState(true);
+
+  function showModalHandler() {
+    setModalEnabled(true);
+  }
+
+  function hideModalHandler() {
+    setModalEnabled(false);
+  }
   return (
     <div className={styles.App}>
-      <Header />
-      <PostList />
+      <Header createPost={showModalHandler} />
+      <PostList
+        isModalVisible={modalEnabled}
+        hidemodalHanlder={hideModalHandler}
+      />
     </div>
   );
 }

@@ -5,10 +5,15 @@ function NewPosts() {
   return (
     <div>
       <form>
-        <label>Textarea :</label>
-        <input type="text" />
-        <label>Name :</label>
-        <input type="text" />
+        <p>
+          <label>Textarea :</label>
+          <input type="text" row={3} />
+        </p>
+        <p>
+          <label>Name :</label>
+          <input type="text" />
+        </p>
+
         <button>Cancel</button>
         <button type="submit">Submit</button>
       </form>

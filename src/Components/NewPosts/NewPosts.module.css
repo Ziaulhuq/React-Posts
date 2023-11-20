@@ -1,0 +1,24 @@
+form {
+  border-radius: 5px;
+  width: 18rem;
+  display: block;
+  height: 20rem;
+  background-color: rgb(74, 208, 232);
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  z-index: 0;
+}
+label {
+  width: 100%;
+  display: block;
+  margin-bottom: 2px;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}

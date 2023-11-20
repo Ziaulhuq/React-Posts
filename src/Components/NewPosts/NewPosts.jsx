@@ -1,21 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./NewPosts.module.css";
 
-function NewPosts() {
+function NewPosts({ onCancel }) {
+  const [enterTextArea, setEnterTextArea] = useState("");
+  const [enterName, setEnterName] = useState("");
+
+  function submitHandler(e) {
+    e.preventDefault();
+    const postData = {
+      textarea: enterTextArea,
+      name: enterName,
+    };
+    console.log(postData);
+
+    setEnterName("");
+    setEnterTextArea("");
+  }
   return (
     <div>
-      <form>
+      <form onSubmit={submitHandler}>
         <p>
           <label>Textarea :</label>
-          <input type="text" row={3} />
+          <textarea
+            type="textarea"
+            rows={3}
+            required
+            value={enterTextArea}
+            onChange={(e) => setEnterTextArea(e.target.value)}
+          />
         </p>
         <p>
           <label>Name :</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={enterName}
+            onChange={(e) => setEnterName(e.target.value)}
+            required
+          />
         </p>
-
-        <button>Cancel</button>
-        <button type="submit">Submit</button>
+        <div className={styles.button}>
+          <button className={styles.cancel} onClick={onCancel}>
+            Cancel
+          </button>
+          <button className={styles.submit} type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );

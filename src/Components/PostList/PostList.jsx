@@ -9,7 +9,7 @@ function PostList({ isModalVisible, hidemodalHanlder }) {
     <div>
       {isModalVisible && (
         <Modal onClose={hidemodalHanlder}>
-          <NewPosts />
+          <NewPosts onCancel={hidemodalHanlder} />
         </Modal>
       )}
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./NewPosts.module.css";
 
-function NewPosts({ onCancel }) {
+function NewPosts({ onCancel, onAddPosts }) {
   const [enterTextArea, setEnterTextArea] = useState("");
   const [enterName, setEnterName] = useState("");
 
@@ -11,6 +11,7 @@ function NewPosts({ onCancel }) {
       textarea: enterTextArea,
       name: enterName,
     };
+    onAddPosts(postData);
     console.log(postData);
 
     setEnterName("");

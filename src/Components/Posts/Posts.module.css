@@ -1,6 +1,10 @@
 .posts {
   width: 10rem;
-  background-color: aquamarine;
+  background-image: linear-gradient(
+    to top right,
+    rgba(1, 52, 77, 0),
+    rgb(3, 126, 180)
+  );
   border-radius: 5px;
   text-align: center;
   padding: 0.5rem;

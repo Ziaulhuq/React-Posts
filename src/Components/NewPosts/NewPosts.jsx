@@ -12,10 +12,9 @@ function NewPosts({ onCancel, onAddPosts }) {
       name: enterName,
     };
     onAddPosts(postData);
-    console.log(postData);
-
     setEnterName("");
     setEnterTextArea("");
+    onCancel();
   }
   return (
     <div>

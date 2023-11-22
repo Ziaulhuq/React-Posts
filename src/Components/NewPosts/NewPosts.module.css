@@ -64,4 +64,7 @@ textarea:focus {
   border: none;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  background-color: rgb(0, 111, 155);
+  color: #fff;
+  font-weight: bolder;
 }

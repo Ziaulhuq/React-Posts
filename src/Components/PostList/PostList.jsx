@@ -11,6 +11,7 @@ function PostList({ isModalVisible, hidemodalHanlder }) {
     setPosts((prevposts) => [postData, ...prevposts]);
     console.log(postData, "postlists");
   }
+
   return (
     <div>
       {isModalVisible && (
@@ -20,8 +21,20 @@ function PostList({ isModalVisible, hidemodalHanlder }) {
       )}
 
       <div className={styles.postlist}>
-        <Posts />
-        <Posts />
+        {posts.length > 0 && (
+          <ul>
+            {posts.map((post) => (
+              <Posts
+                key={post.name}
+                textarea={post.textarea}
+                name={post.name}
+              />
+            ))}
+          </ul>
+        )}
+        {posts.length === 0 && (
+          <p>No posts yet. click the new post button to create post.</p>
+        )}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Header from "./Components/Header/Header.jsx";
 import styles from "./App.module.css";
 
 function App() {
-  const [modalEnabled, setModalEnabled] = useState(true);
+  const [modalEnabled, setModalEnabled] = useState(false);
 
   function showModalHandler() {
     setModalEnabled(true);

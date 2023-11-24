@@ -4,8 +4,8 @@ import styles from "./Posts.module.css";
 function Posts({ textarea, name }) {
   return (
     <div className={styles.posts}>
-      <div>{textarea}</div>
-      <p>{name}</p>
+      <div className={styles.textareatext}>{textarea}</div>
+      <p className={styles.name}>{name}</p>
     </div>
   );
 }

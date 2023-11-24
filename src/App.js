@@ -17,6 +17,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Header createPost={showModalHandler} />
+      <hr />
       <PostList
         isModalVisible={modalEnabled}
         hidemodalHanlder={hideModalHandler}

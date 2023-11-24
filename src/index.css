@@ -8,20 +8,8 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(255, 0, 0, 0),
-    rgb(0, 119, 162)
-  );
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to bottom right, #6351a1, #a990fb);
   height: 100vh;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  width: 100%;
 }

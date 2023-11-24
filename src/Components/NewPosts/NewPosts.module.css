@@ -3,7 +3,7 @@ form {
   width: 18rem;
   display: block;
   height: 20rem;
-  background-color: rgb(74, 208, 232);
+  background-color: #6233b9;
   border: none;
   outline: none;
   display: flex;
@@ -19,12 +19,16 @@ label {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-size: 15px;
+  color: #eadbfb;
 }
 input {
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
   width: 100%;
+  background-color: #c4a9e4;
+  color: #28262c;
+  font: inherit;
 }
 input:focus {
   border: none;
@@ -32,39 +36,47 @@ input:focus {
 }
 textarea {
   padding: 0.5rem;
+  font: inherit;
   width: 100%;
   border-radius: 5px;
   border: none;
+  background-color: #c4a9e4;
+  color: #28262c;
 }
 textarea:focus {
   border: none;
   outline: none;
 }
 .button {
-  padding: 0rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   margin-top: 1rem;
 }
 .cancel {
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   margin-right: 8px;
   border-radius: 4px;
   outline: none;
   border: none;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  background-color: transparent;
+  color: #e5d5f7;
+  font-weight: bold;
 }
 .submit {
-  padding: 0.5rem;
-  margin-right: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-right: 0px;
   border-radius: 4px;
   outline: none;
   border: none;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  background-color: rgb(0, 111, 155);
-  color: #fff;
   font-weight: bolder;
+  background-color: #34036c;
+  color: #e5d5f7;
+}
+.submit:hover {
+  background-color: #23014a;
 }

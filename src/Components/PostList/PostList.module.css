@@ -1,7 +1,24 @@
 .postlist {
   padding: 1.5rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.paragraph {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+}
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(49, 2, 109);
+}
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(199, 183, 207);
+  margin-top: -0.5rem;
 }

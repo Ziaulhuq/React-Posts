@@ -8,7 +8,7 @@ function PostList({ isModalVisible, hidemodalHanlder }) {
   const [posts, setPosts] = useState([]);
 
   function postsHandler(postData) {
-    setPosts((prevposts) => [postData, ...prevposts]);
+    setPosts((prevposts) => [...prevposts, postData]);
     console.log(postData, "postlists");
   }
 
@@ -33,7 +33,12 @@ function PostList({ isModalVisible, hidemodalHanlder }) {
           </ul>
         )}
         {posts.length === 0 && (
-          <p>No posts yet. click the new post button to create post.</p>
+          <p className={styles.paragraph}>
+            <h2>No posts yet.</h2>
+            <p className={styles.text}>
+              click the new post button to create post.
+            </p>
+          </p>
         )}
       </div>
     </div>
